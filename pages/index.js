@@ -4,11 +4,21 @@ import styled from "styled-components";
 import { Button } from "../components/Button";
 import Nav from "../components/nav";
 import { SmallSat } from "../components/Smallsat";
+import Router from 'next/router';
 
 import { Parallax, Background } from "react-parallax";
 import { LandingContainer } from "../components/Landing";
 
 const AboutUsContainer = styled.section`
+.foxsol { text-decoration:none; color:white; } /* Globally */
+
+/* Each state */
+
+.foxsol:visited,.foxsol:link { text-decoration: none; color:white; }
+foxsol:hover { text-decoration: none; color:white; }
+foxsol:focus { text-decoration: none; color:white; }
+foxsol:hover, foxsol:active { text-decoration: none; color:white; }
+
   background-color: #eee;
   overflow: auto;
 
@@ -62,8 +72,8 @@ const AboutUsContainer = styled.section`
     .image {
       flex-basis: 25%;
       display: block;
-      width: 400px;
-      height: 500px;
+      width: 430px;
+      height: 267px;
 
       margin: 3em -4em -4em -4em;
       box-shadow: 0px 30px 40px -30px rgba(0, 0, 0, 0.25);
@@ -93,7 +103,9 @@ export const Centered = styled.div`
   justify-content: center;
   align-items: center;
 `;
-
+function goToSupport(){
+  Router.push('/support');
+}
 class Landing extends Component {
   constructor(props) {
     super(props);
@@ -101,6 +113,7 @@ class Landing extends Component {
       scroll: 0
     };
   }
+
 
   componentDidMount() {
     console.log("asdf");
@@ -131,24 +144,30 @@ class Landing extends Component {
             paving the way for other high school STEM teams.
           </p>
           <div className="actions animated">
-            <Link href="/support">
+            
               <Button
                 className="slide"
                 background="rgba(0, 0, 0, 0)"
                 color="white"
+                
               >
-                Learn more
+                <Link href="/mission" class="foxsol">
+                <a>Learn more</a>
+                </Link>
               </Button>
-            </Link>{" "}
-            <Link href="/support">
+            
+           
               <Button
                 className="slide"
                 background="rgba(0, 0, 0, 0)"
                 color="white"
+                
               >
-                Support
+                <Link href="/support" class="foxsol">
+                <a>Support</a>
+                </Link>
               </Button>
-            </Link>
+            
           </div>
         </div>
       </LandingContainer>
@@ -174,15 +193,15 @@ const Home = () => {
               propagation models and space weather research.
             </p>
             <div className="actions">
-              <Link href="/support">
-                <Button className="scale" color="white" background="#090">
+              
+                <Button className="scale" color="white" background="#090" onClick={goToSupport}>
                   Help us get to space
                 </Button>
-              </Link>
+              
             </div>
           </div>
           <img
-            src="https://via.placeholder.com/400x500"
+            src="/groupPhoto1.JPG"
             alt=""
             className="image"
           />
@@ -218,7 +237,7 @@ const Home = () => {
             </div>
           </div>
           <img
-            src="https://via.placeholder.com/400x500"
+            src="/designPhoto1.JPG"
             alt=""
             className="image"
           />

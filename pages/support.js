@@ -61,7 +61,7 @@ const tierInfo = [
 				Optional Position on Board to Influence Decisions
 				Optional Presentation
 				Optional Team Visit`,
-      price: 300
+      price: "$150,000+"
     }
   ],
   [
@@ -76,7 +76,7 @@ const tierInfo = [
         Optional Position on Board to Influence Decisions
         Optional Presentation
         Optional Team Visit`,
-      price: 300
+      price: "$75,000+"
     }
   ],
   [
@@ -90,7 +90,7 @@ const tierInfo = [
         Optional Position on Board to Influence Decisions
         Optional Presentation
         Optional Team Visit`,
-      price: 300
+      price: "$25000-$75000"
     }
   ],
   [
@@ -103,7 +103,7 @@ const tierInfo = [
         Monthly Updates
         Optional Presentation
         Optional Team Visit`,
-      price: 300
+      price: "$10000-$25000"
     }
   ],
   [
@@ -115,7 +115,7 @@ const tierInfo = [
         Large Logo on Merchandise
         Monthly Updates
         Optional Presentation`,
-      price: 300
+      price: "$2500-$10000"
     }
   ],
   [
@@ -127,7 +127,7 @@ const tierInfo = [
         Medium Logo on Merchandise
         Monthly Updates
         Optional Presentation`,
-      price: 300
+      price: "$1000-$2500"
     }
   ],
   [
@@ -137,7 +137,7 @@ const tierInfo = [
       benefits: `
         Small Logo on Website
         Small Logo on Merchandise`,
-      price: 300
+      price: "$300"
     }
   ]
 ];
@@ -340,11 +340,11 @@ const TierContainer = styled.div`
     font-size: 2em;
     margin: 0.5em 0em;
 
-    :before {
+    /*:before {
       content: "$";
       font-size: 0.65em;
       vertical-align: top;
-    }
+    }*/
   }
   .benefits {
     list-style-type: none;
@@ -429,7 +429,9 @@ export default () => {
                     background="#090"
                     className="call-to-action"
                   >
+                    
                     Support us
+                    
                   </Button>
                 </TierCard>
               ))}
