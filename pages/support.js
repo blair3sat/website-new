@@ -27,7 +27,7 @@ const sponsors = [
     tier: "Steel",
     image: "/overleaf-9616755adf07d8ee303b89a18d9598ba.png",
     desc:
-      "Thanks to MSBR we were able to purchase new electronics for development.",
+      "Thanks to Overleaf, we have the ability to write our latex documents in the cloud and with others from anywhere.",
     site: "https://www.overleaf.com/"
   },
   {
@@ -76,7 +76,7 @@ const tierInfo = [
         Optional Position on Board to Influence Decisions
         Optional Presentation
         Optional Team Visit`,
-      price: "$75,000+"
+      price: "$75,000-$150,000"
     }
   ],
   [
@@ -90,7 +90,7 @@ const tierInfo = [
         Optional Position on Board to Influence Decisions
         Optional Presentation
         Optional Team Visit`,
-      price: "$25000-$75000"
+      price: "$25,000-$75,000"
     }
   ],
   [
@@ -103,7 +103,7 @@ const tierInfo = [
         Monthly Updates
         Optional Presentation
         Optional Team Visit`,
-      price: "$10000-$25000"
+      price: "$10,000-$25,000"
     }
   ],
   [
@@ -115,7 +115,7 @@ const tierInfo = [
         Large Logo on Merchandise
         Monthly Updates
         Optional Presentation`,
-      price: "$2500-$10000"
+      price: "$2,500-$10,000"
     }
   ],
   [
@@ -127,7 +127,7 @@ const tierInfo = [
         Medium Logo on Merchandise
         Monthly Updates
         Optional Presentation`,
-      price: "$1000-$2500"
+      price: "$1,000-$2,500"
     }
   ],
   [

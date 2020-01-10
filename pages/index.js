@@ -103,8 +103,9 @@ export const Centered = styled.div`
   justify-content: center;
   align-items: center;
 `;
-function goToSupport(){
-  Router.push('/support');
+function goToSupport(a){
+  //console.log(4);
+  Router.push(a);
 }
 class Landing extends Component {
   constructor(props) {
@@ -144,29 +145,31 @@ class Landing extends Component {
             paving the way for other high school STEM teams.
           </p>
           <div className="actions animated">
-            
-              <Button
+            <Link href="/support">
+              <a>
+            <Button
                 className="slide"
                 background="rgba(0, 0, 0, 0)"
                 color="white"
-                
-              >
-                <Link href="/mission" class="foxsol">
-                <a>Learn more</a>
-                </Link>
+                >
+                Learn more
               </Button>
+              </a>
+            </Link>
+              
+              
             
-           
-              <Button
+            
+           <Link href="/support">
+           <a>
+             <Button
                 className="slide"
                 background="rgba(0, 0, 0, 0)"
-                color="white"
-                
-              >
-                <Link href="/support" class="foxsol">
-                <a>Support</a>
-                </Link>
+                color="white">
+                Support
               </Button>
+            </a>
+           </Link>
             
           </div>
         </div>
