@@ -1,66 +1,24 @@
+Contact
+
 Home:
-- Landing
-- About @
-- Team *
-- Sponsors *
-- Contact *
+    CSLI/Materials
+    Smallsat
+    Fliers
+    Optical/RF paper
 
-Mission:
-- TOC
-- Contents
+Sponsor
+    Sponsor importance
+    Sponsor us pricing
+    Contact
+    Share/Social media
+    Go fund me
 
-Support:
-- Sponsors
-- Tiers
+Team images / descriptions
+Responsive layout
 
-Blog:
-- Most Recent
-- Recent Posts
+404
 
-- Post
-
-Todo:
-    - RSS feed
-    - Responsiveness:
-        - Layout
-        - Sidebar
-    - Fix _document
-    - Fix buttons
-    - About:
-        - Add support CTA
-    - Smallsat
-    - Support:
-        - Go fund me
-        - Contact
-    - Posts
-        - Creation:
-            - CLI + UI
-            - MDX
-        - Page
-            - [Post] page
-            - Recent posts
-    - Fix navbar
-        - Better styles/layout
-        - Blair3sat logo
-        - Responsive
-    - Fix support us button
-    - Fix landing
-        - Add paralax
-        - Add scroll indicator
-    - Add share:
-        - Social media
-        - Gofund me
-    - Fix mission
-        - Table of Contents
-        - Better layout
-        - Permalinks too
-    - Content:
-        - Mission
-        - About us
-        - Smallsat
-        - Fliers
-        - CSLI
-        - RF/Optical papers
-    - Add CD/CI (for ssg)
-    - Add 404
-    - Add back to top
+Main parallax
+Better Navbar styles
+Navbar responsiveness
+Logo

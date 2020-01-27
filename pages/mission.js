@@ -15,6 +15,15 @@ const MissionContainer = styled.section`
 	/* grid-column-gap: 2em; */
 	background: #f8f8f8;
 
+	@media (max-width: 768px) {
+		grid-template-areas:
+			"top"
+			"sidebar"
+			"content";
+		grid-template-rows: 35vh min-content min-content;
+		grid-template-columns: 100vw;
+	}
+
 	.content {
 		grid-area: content;
 
@@ -25,8 +34,15 @@ const MissionContainer = styled.section`
 		padding: 2em;
 		background: #fff;
 		box-shadow: 3px 3px 30px 0px rgba(0, 0, 0, 0.15);
+		box-sizing: border-box;
 
 		font-family: "Open Sans";
+
+		@media (max-width: 768px) {
+			font-size: 1.2em;
+			margin: 0em;
+			width: 100%;
+		}
 	}
 
 	.header {
