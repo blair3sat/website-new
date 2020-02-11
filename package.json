@@ -21,6 +21,7 @@
     "react-dom": "16.11.0",
     "react-flip-toolkit": "^7.0.7",
     "react-parallax": "2.2.4",
+    "react-pdf": "^4.1.0",
     "remark-slug": "5.1.2",
     "remark-toc": "^6.0.0",
     "showdown": "1.9.1",
@@ -29,6 +30,7 @@
     "unist-util-visit": "^2.0.1"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.10.6"
+    "babel-plugin-styled-components": "^1.10.6",
+    "prettier": "^1.19.1"
   }
 }

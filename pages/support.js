@@ -45,6 +45,14 @@ const sponsors = [
 		desc:
 			"Thanks to Micro Aerospace we were able to strengthen our CSLI application with letters of support, and have a greater understanding of the aerospace industry as a whole.",
 		site: "https://www.micro-a.net/"
+	},
+	{
+		name: "ANSYS",
+		tier: "Support",
+		image: "/static/ANSYS_Logo.png",
+		desc:
+			"Thanks to ANSYS we were able to [ASK PHILIP WHAT TO PUT HERE!]",
+		site: "https://www.micro-a.net/"
 	}
 ];
 
@@ -61,7 +69,7 @@ const tierInfo = [
 				Optional Position on Board to Influence Decisions
 				Optional Presentation
 				Optional Team Visit`,
-			price: 300
+			price: "150,000+"
 		}
 	],
 	[
@@ -76,7 +84,7 @@ const tierInfo = [
         Optional Position on Board to Influence Decisions
         Optional Presentation
         Optional Team Visit`,
-			price: 300
+			price: "75,000-150,000"
 		}
 	],
 	[
@@ -90,7 +98,7 @@ const tierInfo = [
         Optional Position on Board to Influence Decisions
         Optional Presentation
         Optional Team Visit`,
-			price: 300
+			price: "25,000-75,000"
 		}
 	],
 	[
@@ -103,7 +111,7 @@ const tierInfo = [
         Monthly Updates
         Optional Presentation
         Optional Team Visit`,
-			price: 300
+			price: "10,000-25,000"
 		}
 	],
 	[
@@ -115,7 +123,7 @@ const tierInfo = [
         Large Logo on Merchandise
         Monthly Updates
         Optional Presentation`,
-			price: 300
+			price: "2,500-10,000"
 		}
 	],
 	[
@@ -127,7 +135,7 @@ const tierInfo = [
         Medium Logo on Merchandise
         Monthly Updates
         Optional Presentation`,
-			price: 300
+			price: "1,000-2,500"
 		}
 	],
 	[
@@ -137,7 +145,7 @@ const tierInfo = [
 			benefits: `
         Small Logo on Website
         Small Logo on Merchandise`,
-			price: 300
+			price: "0-1,000"
 		}
 	]
 ];
@@ -170,13 +178,19 @@ const SupportContainer = styled.section`
 		margin: 2rem auto 1rem auto;
 		text-align: center;
 	}
-	.sponsor-list {
-		overflow: auto;
+	.sponsor-grid{
+		width: 80%;
+		margin: auto;
 		display: flex;
-		padding: 3rem;
+		flex-wrap: wrap;
+		margin: auto;
+		justify-content: center;
+	}
+	.sponsor-list {
+		display: flex;
+//		padding: 1rem;
 		box-sizing: border-box;
-
-		scroll-snap-type: x mandatory;
+//		scroll-snap-type: x mandatory;
 
 		& > *:first-child {
 			margin-left: auto;
@@ -298,19 +312,16 @@ const Sponsor = ({
 }) => {
 	return (
 		<SponsorCard>
-			<SponsorLogo color={color} src={image}>
-				<div className="logo" />
-			</SponsorLogo>
-			<div className="card-content">
-				<div className="top-row">
-					<div className="name">{name}</div>
-					<div className="tier">{tier}</div>
+				<SponsorLogo color={color} src={image}>
+					<div className="logo" />
+				</SponsorLogo>
+				<div className="card-content">
+					<div className="top-row">
+						<div className="name">{name}</div>
+						<div className="tier">{tier}</div>
+					</div>
+					<div className="desc">{desc}</div>
 				</div>
-				<div className="desc">{desc}</div>
-			</div>
-			{/* <div>
-					<a href={site}>Visit Site</a>
-				</div> */}
 		</SponsorCard>
 	);
 };
@@ -447,10 +458,10 @@ export default () => {
 			<Nav />
 			<SupportContainer>
 				<h1 className="section-title">Our sponsors</h1>
-				<div className="sponsor-list">
+				<div className="sponsor-grid">
 					{sponsors.map(s => (
 						<Sponsor sponsor={s} />
-					))}
+					))}					
 				</div>
 				<div id="support" className="support-us-container">
 					<h1 className="section-title">Sponsor us</h1>

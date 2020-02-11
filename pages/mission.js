@@ -36,7 +36,7 @@ const MissionContainer = styled.section`
 		box-shadow: 3px 3px 30px 0px rgba(0, 0, 0, 0.15);
 		box-sizing: border-box;
 
-		font-family: "Open Sans";
+		font-family: "Lato";
 
 		@media (max-width: 768px) {
 			font-size: 1.2em;

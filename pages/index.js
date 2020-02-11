@@ -14,7 +14,7 @@ const AboutUsContainer = styled.section`
 
   .section-title {
     font-size: 4em;
-    margin: 1em auto 1rem auto;
+    //margin: 1em auto 1rem auto;
     text-align: center;
   }
   hr {
@@ -58,7 +58,12 @@ const AboutUsContainer = styled.section`
       padding-right: 7em;
       flex-basis: 50%;
     }
-
+    .logo {
+      position: relative;
+      align-left: auto;
+      align-right: auto;
+      top: -10px;
+    }
     .image {
       flex-basis: 25%;
       display: block;
@@ -125,6 +130,7 @@ class Landing extends Component {
             transform: `translateY(${scroll * 100}%);`
           }}
         >
+          <img className="logo animated" src="/static/logo.png" alt=""/>
           <h1 className="title animated">blair3sat</h1>
           <p className="desc animated">
             An entirely student-run cubesat team at Montgomery Blair High School

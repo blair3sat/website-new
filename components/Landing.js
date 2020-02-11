@@ -52,7 +52,7 @@ export const LandingContainer = styled.section`
     text-align: center;
 
     position: absolute;
-    top: calc(50% - 4em);
+    top: calc(50% - 9em);
     left: 0;
     right: 0;
   }
@@ -63,7 +63,9 @@ export const LandingContainer = styled.section`
     animation-duration: 1s;
     animation-fill-mode: both;
   }
-
+  .better {
+    transform: scale(10);
+  }
   .title {
     text-align: inherit;
     font-family: "Montserrat", sans-serif;

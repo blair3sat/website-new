@@ -10,13 +10,18 @@ const SmallsatContainer = styled.section`
 	h3 {
 		font-size: 2em;
 	}
+	smallSatPoster {
+		height: 30px;
+		width: 20px;
+	}
 `;
 
 export const SmallSat = () => {
 	return (
 		<SmallsatContainer>
 			<h2>Smallsat 2019</h2>
-			<a download href="/smallsatPoster.pdf"><h3>Read our Smallsat Poster</h3></a>
+			<div class="smallsat">
+			</div>
 		</SmallsatContainer>
 	);
 };

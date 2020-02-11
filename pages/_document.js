@@ -45,7 +45,7 @@ export default class MyDocument extends Document {
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:600"
+            href="https://fonts.googleapis.com/css?family=Lato&display=swap"
             rel="stylesheet"
           />
           {this.props.styleTags}
@@ -55,20 +55,20 @@ export default class MyDocument extends Document {
           <style>
             {`body {
               margin: 0px;
-              font-family: Arial,sans-serif;
+              font-family: Lato,sans-serif;
               font-weight: light;
               h1, h2, h3, h4, h5, h6 {
-                font-family: "Montserrat";
+                font-family: "Gilroy";
               }
               overflow-x: hidden;
             }`}
           </style>
           <Main />
-          {/* <Link href="/support">
+          {<Link href="/support">
             <SupportButton className="scale" background="#090" color="#fff">
               Support us
             </SupportButton>
-          </Link> */}
+          </Link>}
           <NextScript />
         </body>
       </Html>

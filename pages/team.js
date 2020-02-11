@@ -5,7 +5,7 @@ import Nav from "../components/nav.js";
 import { Button } from "../components/Button";
 import { Flipper, Flipped } from "react-flip-toolkit";
 
-const members = Array(10)
+const members = Array(15)
 	.fill()
 	.map(() => ({
 		img:
@@ -21,8 +21,8 @@ const TeamContainer = styled.div`
 		margin: auto;
 		border: none;
 		box-shadow: none;
-		width: 3em;
-		height: 6px;
+		width: 4em;
+		height: 8px;
 		background-color: #4b4;
 	}
 	.title {
@@ -59,9 +59,9 @@ const TeamContainer = styled.div`
 
 	.placeholder {
 		min-width: 10vw;
-		min-height: 15vw;
+		min-height: 20vw;
 		max-width: 10vw;
-		max-height: 15vw;
+		max-height: 20vw;
 
 		margin: 1em;
 	}
@@ -82,7 +82,7 @@ const TeamContainer = styled.div`
 
 const MemberContainer = styled.div`
 	width: 10vw;
-	height: 15vw;
+	height: 20vw;
 
 	position: relative;
 
