@@ -5,10 +5,9 @@ import styled from "styled-components";
 const links = [
   { href: "/", label: "Home" },
   { href: "/mission", label: "Our Mission" },
-  { href: "/support", label: "Support us" },
+  //{ href: "/support", label: "Support us" },
   { href: "/support", label: "Sponsors" },
-  // { href: "/blog", label: "Blog" },
-  { href: "/team", label: "Team" }
+  //{ href: "/blog", label: "Blog" }
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`;
   return link;
@@ -29,23 +28,17 @@ const NavContainer = styled.nav`
   padding: 0em 15%;
   display: flex;
   align-items: center;
-  overflow: auto;
-
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
     padding: 1em;
     right: unset;
     bottom: 0px;
-    height: 4.5em;
-
-    .logo{
-      margin: auto;
-    }
+    z-index: -1;
 
     .links {
+      flex-direction: column;
       padding: 0px;
-
     }
   }
 
