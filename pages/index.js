@@ -132,7 +132,7 @@ class Landing extends Component {
 
     return (
       <LandingContainer>
-        <img className="globe" src="/earth8.jpg" alt="" />
+        <img className="globe" src="/static/earth8.jpg" alt="" />
         <div
           className="content"
           style={{

@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "rename": "node -e \"require('fs').rename('out', 'public', function(err) { if (err) console.log(err); console.log('File successfully renamed!') })\"",
+    "build": "next build && next export && npm run rename",
     "export": "next export",
     "start": "next start"
   },

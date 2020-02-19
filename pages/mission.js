@@ -47,7 +47,7 @@ const MissionContainer = styled.section`
 
 	.header {
 		grid-area: top;
-		background: url("/earth-horizon.jpg");
+		background: url("/static/earth-horizon.jpg");
 		background-size: cover;
 		background-position-y: center;
 
