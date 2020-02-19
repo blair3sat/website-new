@@ -6,8 +6,8 @@ const links = [
   { href: "/mission", label: "Our Mission" },
   { href: "/support#support", label: "Support us" },
   { href: "/support", label: "Sponsors" },
-  // { href: "/blog", label: "Blog" },
-  { href: "/team", label: "Team" }
+  { href: "/team", label: "Our Team" },
+  { href: "/blog", label: "Blog" }
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`;
   return link;
@@ -28,7 +28,7 @@ const NavContainer = styled.nav`
   padding: 0em 15%;
   display: flex;
   align-items: center;
-  overflow: auto;
+  overflow: default;
 
 
   @media screen and (max-width: 768px) {
@@ -36,7 +36,7 @@ const NavContainer = styled.nav`
     padding: 1em;
     right: unset;
     bottom: 0px;
-    height: 4.5em;
+    height: 2em;
 
     .logo{
       margin: auto;

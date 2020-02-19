@@ -10,10 +10,6 @@ const SmallsatContainer = styled.section`
 	h3 {
 		font-size: 2em;
 	}
-	smallSatPoster {
-		height: 30px;
-		width: 20px;
-	}
 `;
 
 export const SmallSat = () => {

@@ -44,7 +44,10 @@ export const LandingContainer = styled.section`
 
     pointer-events: none;
   }
-
+  .logo {
+    height: 50%;
+    width: 50%;
+  }
   .content {
     width: 60%;
     margin: auto;
@@ -52,7 +55,7 @@ export const LandingContainer = styled.section`
     text-align: center;
 
     position: absolute;
-    top: calc(50% - 9em);
+    top: calc(50% - 20em);
     left: 0;
     right: 0;
   }
@@ -62,9 +65,6 @@ export const LandingContainer = styled.section`
     animation: ${fadeInUp};
     animation-duration: 1s;
     animation-fill-mode: both;
-  }
-  .better {
-    transform: scale(10);
   }
   .title {
     text-align: inherit;

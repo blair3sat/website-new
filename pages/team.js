@@ -10,7 +10,8 @@ const members = Array(15)
 	.map(() => ({
 		img:
 			"https://image.cnbcfm.com/api/v1/image/106069136-1565284193572gettyimages-1142580869.jpeg?v=1576531407&w=1400&h=950",
-		name: "John Smith",
+		firstName: "Kevin",
+		lastName: "Wu",
 		team: "Programming",
 		bio:
 			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
@@ -58,9 +59,9 @@ const TeamContainer = styled.div`
 	}
 
 	.placeholder {
-		min-width: 10vw;
+		min-width: 15vw;
 		min-height: 20vw;
-		max-width: 10vw;
+		max-width: 15vw;
 		max-height: 20vw;
 
 		margin: 1em;
@@ -81,7 +82,7 @@ const TeamContainer = styled.div`
 `;
 
 const MemberContainer = styled.div`
-	width: 10vw;
+	width: 15vw;
 	height: 20vw;
 
 	position: relative;
@@ -117,12 +118,12 @@ const MemberContainer = styled.div`
 	}
 
 	.member-img {
-		min-width: 10vw;
-		min-height: 10vw;
-		max-width: 10vw;
-		max-height: 10vw;
+		min-width: 11vw;
+		min-height: 11vw;
+		max-width: 11vw;
+		max-height: 11vw;
 
-		margin: 1em auto;
+		margin: 0.5em auto;
 
 		border-radius: 50%;
 
@@ -153,6 +154,9 @@ const MemberContainer = styled.div`
 
 	.member-name {
 		text-align: center;
+		font-size: 24pt;
+		line-height: 40%;
+		font-weight: bold;
 	}
 
 	.member-desc {
@@ -176,7 +180,7 @@ const MemberContainer = styled.div`
 	}
 `;
 
-const TeamMember = ({ onClick, isSelected, id, img, name, team, bio }) => {
+const TeamMember = ({ onClick, isSelected, id, img, firstName, lastName, team, bio }) => {
 	return (
 		<div className="placeholder">
 			<Flipped flipId={`card-${id}`}>
@@ -192,7 +196,8 @@ const TeamMember = ({ onClick, isSelected, id, img, name, team, bio }) => {
 						/>
 					</Flipped>
 					<div className="content">
-						<h1 className="member-name">{name}</h1>
+						<p className="member-name">{firstName}</p>
+						<p className="member-name">{lastName}</p>
 						<div className="member-role">
 							<span className="team">Teams:</span>
 							<span className="teams">{team}</span>

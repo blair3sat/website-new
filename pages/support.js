@@ -27,7 +27,7 @@ const sponsors = [
 		tier: "Steel",
 		image: "/static/overleaf-9616755adf07d8ee303b89a18d9598ba.png",
 		desc:
-			"Thanks to MSBR we were able to purchase new electronics for development.",
+			"Thanks to Overleaf, we have the ability to write our latex documents in the cloud and with others from anywhere.",
 		site: "https://www.overleaf.com/"
 	},
 	{
@@ -40,7 +40,7 @@ const sponsors = [
 	},
 	{
 		name: "Micro Aerospace Solultions",
-		tier: "Support",
+		tier: "Steel",
 		image: "/static/MicroALogo.png",
 		desc:
 			"Thanks to Micro Aerospace we were able to strengthen our CSLI application with letters of support, and have a greater understanding of the aerospace industry as a whole.",
@@ -48,11 +48,11 @@ const sponsors = [
 	},
 	{
 		name: "ANSYS",
-		tier: "Support",
+		tier: "Steel",
 		image: "/static/ANSYS_Logo.png",
 		desc:
 			"Thanks to ANSYS we were able to [ASK PHILIP WHAT TO PUT HERE!]",
-		site: "https://www.micro-a.net/"
+		site: "https://www.ansys.com/"
 	}
 ];
 
@@ -216,12 +216,14 @@ const SupportContainer = styled.section`
 	.support-us {
 		width: 90%;
 		margin: auto;
-
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
 	.top-pricing {
 		display: flex;
     align-items: center;
@@ -237,6 +239,7 @@ const SponsorCard = styled.div`
 	flex: 0 0 18em;
 	margin: 1em;
 	border-radius: 5px;
+	overflow: auto;
 
 	display: inline-flex;
 	flex-direction: column;
@@ -311,18 +314,22 @@ const Sponsor = ({
 	sponsor: { name, tier, image, desc, color = "#fff", site }
 }) => {
 	return (
-		<SponsorCard>
-				<SponsorLogo color={color} src={image}>
-					<div className="logo" />
-				</SponsorLogo>
-				<div className="card-content">
-					<div className="top-row">
-						<div className="name">{name}</div>
-						<div className="tier">{tier}</div>
+			<SponsorCard>
+				<a href={site}>
+
+					<SponsorLogo color={color} src={image}>
+						<div className="logo" />
+					</SponsorLogo>
+					<div className="card-content">
+						<div className="top-row">
+							<div className="name">{name}</div>
+							<div className="tier">{tier}</div>
+						</div>
+						<div className="desc">{desc}</div>
 					</div>
-					<div className="desc">{desc}</div>
-				</div>
-		</SponsorCard>
+				</a>
+			</SponsorCard>
+//		</a>
 	);
 };
 
@@ -464,6 +471,7 @@ export default () => {
 					))}					
 				</div>
 				<div id="support" className="support-us-container">
+					<br></br>
 					<h1 className="section-title">Sponsor us</h1>
 					<div className="top-pricing">
 						{topTiers

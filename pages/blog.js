@@ -44,7 +44,23 @@ const PostPreview = styled.div`
       margin: 0 5px;
     }
   }
+  &.selected {
+		width: 100%;
+		height: 100%;
+		max-width: 40%;
+		max-height: 60%;
 
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		overflow: auto;
+
+		transition: z-index 0.5s step-start;
+		z-index: 3000;
+
+		padding: 1em;
+	}
   .post-title {
     font-size: 2.5em;
     margin: 1rem;
@@ -75,6 +91,7 @@ const BlogIndex = ({ p: { title, urlPath, publishDate, BlogPost, meta } }) => {
   return (
     <PostPreview>
       <div className="meta">
+        <div className="avatar"><img src={meta.avatar}/></div>
         <div className="author">{meta.author}</div> &#8226;
         <div className="date">{publishDate}</div>
       </div>

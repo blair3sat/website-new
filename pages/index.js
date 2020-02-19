@@ -58,12 +58,6 @@ const AboutUsContainer = styled.section`
       padding-right: 7em;
       flex-basis: 50%;
     }
-    .logo {
-      position: relative;
-      align-left: auto;
-      align-right: auto;
-      top: -10px;
-    }
     .image {
       flex-basis: 25%;
       display: block;
@@ -130,14 +124,14 @@ class Landing extends Component {
             transform: `translateY(${scroll * 100}%);`
           }}
         >
-          <img className="logo animated" src="/static/logo.png" alt=""/>
+          <img className="logo animated" src="/static/blair3satlogo.png" alt=""/>
           <h1 className="title animated">blair3sat</h1>
           <p className="desc animated">
             An entirely student-run cubesat team at Montgomery Blair High School
             paving the way for other high school STEM teams.
           </p>
           <div className="actions animated">
-            <Link href="/support">
+            <Link href="/mission">
               <Button
                 className="slide"
                 background="rgba(0, 0, 0, 0)"
@@ -146,7 +140,7 @@ class Landing extends Component {
                 Learn more
               </Button>
             </Link>{" "}
-            <Link href="/support">
+            <Link href="/support#support">
               <Button
                 className="slide"
                 background="rgba(0, 0, 0, 0)"
