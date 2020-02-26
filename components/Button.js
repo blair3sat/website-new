@@ -21,6 +21,9 @@ export const Button = styled.button`
   outline: none;
 
   &.slide:before {
+
+    pointer-events: none;
+
     content: "";
 
     position: absolute;
