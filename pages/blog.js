@@ -38,6 +38,9 @@ const PostPreview = styled.div`
 
   .meta {
     position: absolute;
+    .author{
+       left: -20em;
+    }
     bottom: 105%;
     display: flex;
     * {
@@ -60,7 +63,7 @@ const PostPreview = styled.div`
 		z-index: 3000;
 
 		padding: 1em;
-	}
+  }
   .post-title {
     font-size: 2.5em;
     margin: 1rem;
@@ -91,7 +94,8 @@ const BlogIndex = ({ p: { title, urlPath, publishDate, BlogPost, meta } }) => {
   return (
     <PostPreview>
       <div className="meta">
-        <div className="avatar"><img src={meta.avatar}/></div>
+        <div className="avatar"><img src={meta.avatar} style={{width:'10%', length:
+        '10%'}} alt={"Image of Author"}/></div>
         <div className="author">{meta.author}</div> &#8226;
         <div className="date">{publishDate}</div>
       </div>

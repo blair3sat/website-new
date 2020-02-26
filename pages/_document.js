@@ -64,11 +64,6 @@ export default class MyDocument extends Document {
             }`}
           </style>
           <Main />
-          {<Link href="/support">
-            <SupportButton className="scale" background="#090" color="#fff">
-              Support us
-            </SupportButton>
-          </Link>}
           <NextScript />
         </body>
       </Html>

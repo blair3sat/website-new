@@ -63,6 +63,7 @@ const AboutUsContainer = styled.section`
       display: block;
       width: 400px;
       height: 500px;
+      object-fit: scale-down;
 
       margin: 3em -4em -4em -4em;
       box-shadow: 0px 30px 40px -30px rgba(0, 0, 0, 0.25);
@@ -182,7 +183,7 @@ const Home = () => {
             </div>
           </div>
           <img
-            src="https://via.placeholder.com/400x500"
+            src="static/andrew_picture.jpg"
             alt=""
             className="image"
           />
@@ -218,13 +219,12 @@ const Home = () => {
             </div>
           </div>
           <img
-            src="https://via.placeholder.com/400x500"
-            alt=""
+            src="static/rendering.png"
+            alt="/"
             className="image"
           />
         </div>
       </AboutUsContainer>
-      <SmallSat />
     </>
   );
 };

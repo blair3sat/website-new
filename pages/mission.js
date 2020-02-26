@@ -11,7 +11,7 @@ const MissionContainer = styled.section`
 		"top top"
 		"sidebar content";
 	grid-template-rows: 35vh min-content;
-	grid-template-columns: 25% auto;
+	grid-template-columns: 0% auto;
 	/* grid-column-gap: 2em; */
 	background: #f8f8f8;
 
@@ -30,7 +30,8 @@ const MissionContainer = styled.section`
 		width: 80%;
 		font-size: 1.5vw;
 		line-height: 1.4;
-		margin: 2em;
+		// margin: 2em;
+		margin: 2em auto;
 		padding: 2em;
 		background: #fff;
 		box-shadow: 3px 3px 30px 0px rgba(0, 0, 0, 0.15);
@@ -172,7 +173,7 @@ const Mission = () => {
 					<div className="toc">
 						{/* <h1 className="title">Contents</h1>
             <hr/> */}
-						<TOC links={links}></TOC>
+						{/*<TOC links={links}></TOC>*/}
 					</div>
 				</div>
 				<div className="content">

@@ -5,9 +5,9 @@ import styled from "styled-components";
 const links = [
   { href: "/mission", label: "Our Mission" },
   { href: "/support#support", label: "Support us" },
-  { href: "/support", label: "Sponsors" },
-  { href: "/team", label: "Our Team" },
-  { href: "/blog", label: "Blog" }
+  { href: "/support", label: "Sponsors" }
+//  { href: "/team", label: "Our Team" },
+//  { href: "/blog", label: "Blog" }
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`;
   return link;

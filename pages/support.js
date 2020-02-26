@@ -51,7 +51,7 @@ const sponsors = [
 		tier: "Steel",
 		image: "/static/ANSYS_Logo.png",
 		desc:
-			"Thanks to ANSYS we were able to [ASK PHILIP WHAT TO PUT HERE!]",
+			"Thanks to ANSYS we were able to perform shock, vibration, and, thermal testing using their simulation software. ",
 		site: "https://www.ansys.com/"
 	}
 ];
@@ -158,6 +158,82 @@ const benefits = new Set(
 );
 
 const topTiers = [0, 1, 2];
+
+const SponsorContainer = styled.section`
+	min-height: 100vh;
+	background-color: #eee;
+	overflow: auto;
+
+	hr.all {
+		margin: 0.5em auto;
+		border: none;
+		box-shadow: none;
+		width: 50%;
+		height: 2px;
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+
+	.section-title {
+		font-size: 3em;
+		margin: 2rem auto 1rem auto;
+		text-align: center;
+	}
+	.sponsor-grid{
+		width: 80%;
+		margin: auto;
+		display: flex;
+		flex-wrap: wrap;
+		margin: auto;
+		justify-content: center;
+	}
+	.sponsor-list {
+		display: flex;
+//		padding: 1rem;
+		box-sizing: border-box;
+//		scroll-snap-type: x mandatory;
+
+		& > *:first-child {
+			margin-left: auto;
+		}
+		& > *:last-child {
+			margin-right: auto;
+
+			position: relative;
+
+			&:after {
+				content: "";
+				position: absolute;
+				min-width: 3rem;
+				height: 1px;
+				left: 100%;
+			}
+		}
+
+		::-webkit-scrollbar {
+			display: none;
+		}
+	}
+	.support-us {
+		width: 90%;
+		margin: auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+	.top-pricing {
+		display: flex;
+    align-items: center;
+
+		overflow: auto;
+		scroll-snap-type: x mandatory;
+
+		padding: 0em 3rem;
+	}
+`;
 
 const SupportContainer = styled.section`
 	min-height: 100vh;
@@ -463,13 +539,15 @@ export default () => {
 	return (
 		<>
 			<Nav />
-			<SupportContainer>
+			<SponsorContainer>
 				<h1 className="section-title">Our sponsors</h1>
 				<div className="sponsor-grid">
 					{sponsors.map(s => (
 						<Sponsor sponsor={s} />
 					))}					
 				</div>
+			</SponsorContainer>
+			<SupportContainer>
 				<div id="support" className="support-us-container">
 					<br></br>
 					<h1 className="section-title">Sponsor us</h1>
