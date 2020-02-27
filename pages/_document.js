@@ -43,7 +43,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="static/logo.ico" />
           <link
             href="https://fonts.googleapis.com/css?family=Lato&display=swap"
             rel="stylesheet"
