@@ -181,6 +181,7 @@ const SponsorContainer = styled.section`
 	.sponsor-grid{
 		width: 80%;
 		margin: auto;
+		padding-bottom: 1em;
 		display: flex;
 		flex-wrap: wrap;
 		margin: auto;
@@ -302,11 +303,11 @@ const SupportContainer = styled.section`
 	}
 	.top-pricing {
 		display: flex;
-    align-items: center;
+    	align-items: center;
 
 		overflow: auto;
 		scroll-snap-type: x mandatory;
-
+		
 		padding: 0em 3rem;
 	}
 `;

@@ -32,6 +32,7 @@ const AboutUsContainer = styled.section`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     overflow: visible;
 
     &:first-child {
@@ -61,12 +62,12 @@ const AboutUsContainer = styled.section`
     .image {
       flex-basis: 25%;
       display: block;
-      width: 400px;
-      height: 500px;
-      object-fit: scale-down;
+      width: 350px;
+      /* height: 500px; */
+      object-fit: cover;
 
       margin: 3em -4em -4em -4em;
-      box-shadow: 0px 30px 40px -30px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 30px 40px -30px rgba(0, 0, 0, 0.5);
       /* box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15); */
     }
     .actions {
@@ -83,6 +84,12 @@ const AboutUsContainer = styled.section`
         padding: 3em;
 
         padding-left: 7em;
+      }
+    }
+    @media (max-width: 1000px) {
+      .desc {
+        padding: 3em;
+        flex-direction: column;
       }
     }
   }
@@ -222,6 +229,7 @@ const Home = () => {
             src="static/rendering.png"
             alt="/"
             className="image"
+            style={{boxShadow: "none"}}
           />
         </div>
       </AboutUsContainer>

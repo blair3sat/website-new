@@ -58,7 +58,7 @@ export default class MyDocument extends Document {
               font-family: Lato,sans-serif;
               font-weight: light;
               h1, h2, h3, h4, h5, h6 {
-                font-family: "Gilroy";
+                font-family: Gilroy;
               }
               overflow-x: hidden;
             }`}
