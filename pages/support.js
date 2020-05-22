@@ -145,7 +145,7 @@ const tierInfo = [
 			benefits: `
         Small Logo on Website
         Small Logo on Merchandise`,
-			price: "0-1,000"
+			price: "1-1,000"
 		}
 	]
 ];
