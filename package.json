@@ -7,7 +7,8 @@
     "rename": "node -e \"require('fs').rename('out', 'public', function(err) { if (err) console.log(err); console.log('File successfully renamed!') })\"",
     "build": "next build && next export && npm run rename",
     "export": "next export",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "next build && next export -o docs && git checkout -- docs/CNAME && git checkout -- docs/.nojekyll && git add docs && git commit -m \"chore: regen site\" && git push origin master"
   },
   "dependencies": {
     "@mdx-js/loader": "1.5.1",
