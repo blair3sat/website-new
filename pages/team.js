@@ -9,7 +9,7 @@ const members = Array(15)
 	.fill()
 	.map(() => ({
 		img:
-			"https://image.cnbcfm.com/api/v1/image/106069136-1565284193572gettyimages-1142580869.jpeg?v=1576531407&w=1400&h=950",
+			"/static/gtm.jpeg",
 		firstName: "Gautom",
 		lastName: "Das",
 		team: "Programming",
