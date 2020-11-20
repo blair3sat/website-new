@@ -55,11 +55,11 @@ const sponsors = [
 		site: "https://www.ansys.com/"
 	},
 	{
-		name: "HAMAMASTSU",
+		name: "Hamamatsu",
 		tier: "Steel",
 		image: "/static/Hamamatsu_Logo.png",
 		desc:
-			"Thanks to Hamamatsu our optical team was able to purchase high-quality photodiodes at a discounted rate.",
+			"Thanks to Hamamatsu our optical team will be able to purchase high-quality photodiodes at a discounted rate.",
 		site: "https://www.hamamatsu.com/jp/en/index.html"
 	}
 ];
