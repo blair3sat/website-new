@@ -53,6 +53,14 @@ const sponsors = [
 		desc:
 			"Thanks to ANSYS we were able to perform shock, vibration, and, thermal testing using their simulation software. ",
 		site: "https://www.ansys.com/"
+	},
+	{
+		name: "HAMAMASTSU",
+		tier: "Steel",
+		image: "/static/Hamamatsu_Logo.png",
+		desc:
+			"Thanks to Hamamatsu our optical team was able to make progress in completing their portion of the cubesat mission.",
+		site: "https://www.hamamatsu.com/jp/en/index.html"
 	}
 ];
 
