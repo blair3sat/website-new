@@ -1,3 +1,5 @@
 # website-new
 newest iteration of the blair3sat website
-[![Netlify Status](https://api.netlify.com/api/v1/badges/809e44e7-0208-4491-81cb-e2700813f3b9/deploy-status)](https://app.netlify.com/sites/blair3sat/deploys)
+
+FOR THOSE WHO ARE CONTRIBUTING:
+to deploy the website run `npm deploy`. This compiles the next app and pushes it to docs/ so that the website will update. This won't, however, commit and save the code. You still have to commit that manually. Updating site and source code are now different processes. please keep this in mind
