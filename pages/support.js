@@ -59,7 +59,7 @@ const sponsors = [
 		tier: "Steel",
 		image: "/static/Hamamatsu_Logo.png",
 		desc:
-			"Thanks to Hamamatsu our optical team was able to make progress in completing their portion of the cubesat mission.",
+			"Thanks to Hamamatsu our optical team was able to purchase high-quality photodiodes at a discounted rate.",
 		site: "https://www.hamamatsu.com/jp/en/index.html"
 	}
 ];
