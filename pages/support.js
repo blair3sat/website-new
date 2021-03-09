@@ -55,6 +55,14 @@ const sponsors = [
 		site: "https://www.ansys.com/"
 	},
 	{
+		name: "AGI",
+		tier: "Steel",
+		image: "/static/agi.png",
+		desc:
+			"Thanks to AGI's Educational Alliance Program, we are able to use their Systems Tool Kit software to simulate essential functions for our CubeSat. ",
+		site: "https://www.agi.com/"
+	},
+	{
 		name: "Hamamatsu",
 		tier: "Steel",
 		image: "/static/Hamamatsu_Logo.png",
