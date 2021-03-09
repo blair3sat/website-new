@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[22],{uBm1:function(_,n,w){(window.__NEXT_P=window.__NEXT_P||[]).push(["/team",function(){return w("YykV")}])}},[["uBm1",0,1,2,3,7]]]);
